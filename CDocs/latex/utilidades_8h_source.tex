@@ -1,0 +1,44 @@
+\hypertarget{utilidades_8h_source}{}\doxysection{utilidades.\+h}
+\label{utilidades_8h_source}\index{C:/Matthew 2022-\/2023/Estructuras/ProyectoSegundoParcial/AVLTreeApp.src/AVLTreeApp/utilidades.h@{C:/Matthew 2022-\/2023/Estructuras/ProyectoSegundoParcial/AVLTreeApp.src/AVLTreeApp/utilidades.h}}
+\mbox{\hyperlink{utilidades_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00001}00001 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00002}00002 \textcolor{comment}{* Universidad de las Fuerzas Armadas ESPE}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00003}00003 \textcolor{comment}{*       Ingenieria de Software}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00004}00004 \textcolor{comment}{* Autores:}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00005}00005 \textcolor{comment}{*}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00006}00006 \textcolor{comment}{* Salazar Encalada Edwin Matthew}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00007}00007 \textcolor{comment}{* Felix Paredes Cristian David}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00008}00008 \textcolor{comment}{* Campoverde Encarnacion Carlos Danny}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00009}00009 \textcolor{comment}{*}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00010}00010 \textcolor{comment}{* Enunciado: Arbol AVL en modo grafico}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00011}00011 \textcolor{comment}{*}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00012}00012 \textcolor{comment}{* Fecha de creacion: 11/01/2023}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00013}00013 \textcolor{comment}{* Fecha de modificacion: 19/01/2023}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00014}00014 \textcolor{comment}{*}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00015}00015 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00017}00017 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00018}00018 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00019}00019 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00020}00020 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00027}00027 \textcolor{keyword}{static} \textcolor{keyword}{inline} \textcolor{keywordtype}{int} leer\_numero(std::string mensaje) \{}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00028}00028     std::string valor;}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00030}00030     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00031}00031         std::cout << mensaje;}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00032}00032         std::cin >> valor;}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00034}00034         valor.erase(0, valor.find\_first\_not\_of(\textcolor{charliteral}{' '}));}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00035}00035         valor.erase(valor.find\_last\_not\_of(\textcolor{charliteral}{' '}) + 1);}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00037}00037         \textcolor{keywordflow}{if} (valor.empty()) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00039}00039         \textcolor{keywordflow}{if} (valor.find\_first\_not\_of(\textcolor{stringliteral}{"{}0123456789"{}}) == std::string::npos) \{}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00040}00040             \textcolor{keywordflow}{return} std::stoi(valor);}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00041}00041         \}}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00042}00042     \} \textcolor{keywordflow}{while} (\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{utilidades_8h_source_l00043}00043 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,92 @@
+\hypertarget{aplicacion_8cpp_source}{}\doxysection{aplicacion.\+cpp}
+\label{aplicacion_8cpp_source}\index{C:/Matthew 2022-\/2023/Estructuras/ProyectoSegundoParcial/AVLTreeApp.src/AVLTreeApp/aplicacion.cpp@{C:/Matthew 2022-\/2023/Estructuras/ProyectoSegundoParcial/AVLTreeApp.src/AVLTreeApp/aplicacion.cpp}}
+\mbox{\hyperlink{aplicacion_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00001}00001 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00002}00002 \textcolor{comment}{* Universidad de las Fuerzas Armadas ESPE}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00003}00003 \textcolor{comment}{*       Ingenieria de Software}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00004}00004 \textcolor{comment}{* Autores:}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00005}00005 \textcolor{comment}{*}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00006}00006 \textcolor{comment}{* Salazar Encalada Edwin Matthew}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00007}00007 \textcolor{comment}{* Felix Paredes Cristian David}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00008}00008 \textcolor{comment}{* Campoverde Encarnacion Carlos Danny}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00009}00009 \textcolor{comment}{*}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00010}00010 \textcolor{comment}{* Enunciado: Arbol AVL en modo grafico}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00011}00011 \textcolor{comment}{*}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00012}00012 \textcolor{comment}{* Fecha de creacion: 11/01/2023}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00013}00013 \textcolor{comment}{* Fecha de modificacion: 19/01/2023}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00014}00014 \textcolor{comment}{*}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00015}00015 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00017}00017 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{aplicacion_8h}{aplicacion.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00018}00018 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{utilidades_8h}{utilidades.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00020}00020 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00022}\mbox{\hyperlink{class_arbol_a_v_l_app_a57787695409eb2cdeff155482c3590f5}{00022}} \mbox{\hyperlink{class_arbol_a_v_l_app_a57787695409eb2cdeff155482c3590f5}{ArbolAVLApp::ArbolAVLApp}}() \{\}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00028}\mbox{\hyperlink{class_arbol_a_v_l_app_a31f1be7b34d3d3f39c65520c6c3f172d}{00028}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_arbol_a_v_l_app_a31f1be7b34d3d3f39c65520c6c3f172d}{ArbolAVLApp::ejecutar}}()}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00029}00029 \{}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00030}00030     visualizador\_grafico.\mbox{\hyperlink{class_visualizador_grafico_a6a0c9f71ca5107e6a8a0267098a6511c}{dibujar}}(arbol);}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00031}00031     \mbox{\hyperlink{class_arbol_a_v_l_app_a0acab3fc9c89280ff32968f789daa49a}{menu}}();}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00032}00032     visualizador\_grafico.\mbox{\hyperlink{class_visualizador_grafico_a8b2d11540931a356c2f23b5abf715a14}{finalizar}}();}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00033}00033 \}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00039}\mbox{\hyperlink{class_arbol_a_v_l_app_a0acab3fc9c89280ff32968f789daa49a}{00039}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_arbol_a_v_l_app_a0acab3fc9c89280ff32968f789daa49a}{ArbolAVLApp::menu}}()}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00040}00040 \{}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00041}00041     \textcolor{keywordtype}{int} seleccion;}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00042}00042     }
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00043}00043     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00044}00044         system(\textcolor{stringliteral}{"{}cls"{}});}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00045}00045         cout << \textcolor{stringliteral}{"{}1. Insertar"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00046}00046         cout << \textcolor{stringliteral}{"{}2. Buscar"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00047}00047         cout << \textcolor{stringliteral}{"{}3. Eliminar"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00048}00048         cout << \textcolor{stringliteral}{"{}4. Salir"{}} << endl << endl;}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00050}00050         seleccion = leer\_numero(\textcolor{stringliteral}{"{}Seleccione una opcion: "{}});}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00051}00051         }
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00052}00052         \textcolor{keywordflow}{if} (seleccion < 1 || seleccion > 4) \{}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00053}00053             \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00054}00054         \}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00056}00056         \mbox{\hyperlink{class_arbol_a_v_l_app_a5c0006f44d1c66cd09fd75759fb2da2b}{menu\_seleccion}}(seleccion);}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00057}00057     \} \textcolor{keywordflow}{while} (seleccion != 4);}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00058}00058 \}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00065}\mbox{\hyperlink{class_arbol_a_v_l_app_a5c0006f44d1c66cd09fd75759fb2da2b}{00065}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_arbol_a_v_l_app_a5c0006f44d1c66cd09fd75759fb2da2b}{ArbolAVLApp::menu\_seleccion}}(\textcolor{keywordtype}{int} seleccion)}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00066}00066 \{}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00067}00067     \textcolor{keywordflow}{switch} (seleccion) \{}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00068}00068         \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00069}00069         \{}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00070}00070             \textcolor{keywordtype}{int} valor = leer\_numero(\textcolor{stringliteral}{"{}Ingrese un valor: "{}});}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00071}00071             arbol.\mbox{\hyperlink{class_arbol_a_v_l_ad7d20aefeee1eedfe5308fe0c743410a}{insertar}}(valor);}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00072}00072             visualizador\_grafico.\mbox{\hyperlink{class_visualizador_grafico_a6a0c9f71ca5107e6a8a0267098a6511c}{dibujar}}(arbol);}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00073}00073         \}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00074}00074         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00075}00075         \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00076}00076         \{}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00077}00077             \textcolor{keywordtype}{int} valor = leer\_numero(\textcolor{stringliteral}{"{}Ingrese un valor: "{}});}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00078}00078             \mbox{\hyperlink{class_nodo_a_v_l}{NodoAVL<int>}}* nodo = arbol.\mbox{\hyperlink{class_arbol_a_v_l_a0ddfbf1fc6971f7a682a3187a7f6abbd}{buscar}}(valor);}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00080}00080             \textcolor{keywordflow}{if} (nodo != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00081}00081                 cout << \textcolor{stringliteral}{"{}Valor encontrado"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00082}00082                 visualizador\_grafico.\mbox{\hyperlink{class_visualizador_grafico_a6a0c9f71ca5107e6a8a0267098a6511c}{dibujar}}(arbol, nodo);}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00083}00083             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00084}00084                 cout << \textcolor{stringliteral}{"{}Valor no encontrado"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00085}00085             \}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00087}00087             cout << endl << endl;}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00088}00088             system(\textcolor{stringliteral}{"{}pause"{}});}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00089}00089             visualizador\_grafico.\mbox{\hyperlink{class_visualizador_grafico_a6a0c9f71ca5107e6a8a0267098a6511c}{dibujar}}(arbol);}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00090}00090         \}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00091}00091         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00092}00092         \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00093}00093         \{}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00094}00094             \textcolor{keywordtype}{int} valor = leer\_numero(\textcolor{stringliteral}{"{}Ingrese un valor: "{}});}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00095}00095             arbol.\mbox{\hyperlink{class_arbol_a_v_l_ad79026fec6da1103b4fe598efd0d53f4}{eliminar}}(valor);}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00096}00096             visualizador\_grafico.\mbox{\hyperlink{class_visualizador_grafico_a6a0c9f71ca5107e6a8a0267098a6511c}{dibujar}}(arbol);}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00097}00097         \}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00098}00098         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00099}00099     \}}
+\DoxyCodeLine{\Hypertarget{aplicacion_8cpp_source_l00100}00100 \}}
+
+\end{DoxyCode}
