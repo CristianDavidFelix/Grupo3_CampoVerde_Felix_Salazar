@@ -68,3 +68,39 @@ int main()
     // Esta parte es para centrar el tablero en la pantalla
     // Obtiene el ancho de la consola
     HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+    CONSOLE_SCREEN_BUFFER_INFO csbi;
+    GetConsoleScreenBufferInfo(hOut, &csbi);
+    int consoleWidth = csbi.srWindow.Right - csbi.srWindow.Left + 1;
+    // Reabre el archivo para volver a leerlo
+    file.open("chessboard.txt");
+    cout << "\n\n\n\n\n";
+    cout << "\t\t\t\t\t\t\tTablero de Ajedrez\n";
+    cout << "\t\t\t\t------------------------------------------------------------";
+    while (getline(file, line))
+    {
+        // Calcula el espacio a la izquierda del tablero
+        int leftSpaces = (consoleWidth - (N * tam_aumentado)) / 2;
+        cout << "\n\n";
+        // Imprime los espacios
+        for (int i = 0; i < leftSpaces; i++)
+        {
+            cout << " ";
+        }
+        // Recorre cada caracter de la línea
+        for (int i = 0; i < line.length(); i++)
+        {
+            // Imprime el caracter varias veces para aumentar su tamaño
+            for (int j = 0; j < tam_aumentado; j++)
+            {
+                cout << (line[i] == '0' ? " " : "#");
+            }
+            cout << " ";
+        }
+        cout << endl;
+    }
+    cout << "\t\t\t\t------------------------------------------------------------";
+    cout << "\n\n\n\n\n";
+    file.close();
+
+    return 0;
+}
