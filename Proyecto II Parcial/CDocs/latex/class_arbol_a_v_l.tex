@@ -1,0 +1,140 @@
+\hypertarget{class_arbol_a_v_l}{}\doxysection{Arbol\+AVL\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_arbol_a_v_l}\index{ArbolAVL$<$ T $>$@{ArbolAVL$<$ T $>$}}
+
+
+{\ttfamily \#include $<$arbol\+\_\+avl.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_arbol_a_v_l_ad7d20aefeee1eedfe5308fe0c743410a}{insertar}} (T valor)
+\item 
+void \mbox{\hyperlink{class_arbol_a_v_l_ad79026fec6da1103b4fe598efd0d53f4}{eliminar}} (T valor)
+\item 
+\mbox{\hyperlink{class_nodo_a_v_l}{Nodo\+AVL}}$<$ T $>$ $\ast$ \mbox{\hyperlink{class_arbol_a_v_l_a0ddfbf1fc6971f7a682a3187a7f6abbd}{buscar}} (T valor)
+\item 
+void \mbox{\hyperlink{class_arbol_a_v_l_a427610f4ac3bb88f8c14895048997e5f}{recorrer}} (std\+::function$<$ void(T)$>$ funcion, \mbox{\hyperlink{arbol__avl_8h_a180d807d2d0592759332560991a26088}{Tipo\+Recorrido}} tipo\+\_\+recorrido=Tipo\+Recorrido\+::\+INORDEN)
+\item 
+void \mbox{\hyperlink{class_arbol_a_v_l_a4b1898f3668ea96d49ee560385f84844}{recorrer}} (std\+::function$<$ void(\mbox{\hyperlink{class_nodo_a_v_l}{Nodo\+AVL}}$<$ T $>$ $\ast$)$>$ funcion, \mbox{\hyperlink{arbol__avl_8h_a180d807d2d0592759332560991a26088}{Tipo\+Recorrido}} tipo\+\_\+recorrido=Tipo\+Recorrido\+::\+INORDEN)
+\item 
+\mbox{\hyperlink{class_nodo_a_v_l}{Nodo\+AVL}}$<$ T $>$ $\ast$ \mbox{\hyperlink{class_arbol_a_v_l_a1b67b1e9218eea9471e45419911ca044}{obtener\+\_\+raiz}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Arbol\+AVL$<$ T $>$}
+
+
+Definition at line \mbox{\hyperlink{arbol__avl_8h_source_l00139}{139}} of file \mbox{\hyperlink{arbol__avl_8h_source}{arbol\+\_\+avl.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_arbol_a_v_l_a0ddfbf1fc6971f7a682a3187a7f6abbd}\label{class_arbol_a_v_l_a0ddfbf1fc6971f7a682a3187a7f6abbd}} 
+\index{ArbolAVL$<$ T $>$@{ArbolAVL$<$ T $>$}!buscar@{buscar}}
+\index{buscar@{buscar}!ArbolAVL$<$ T $>$@{ArbolAVL$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{buscar()}{buscar()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_nodo_a_v_l}{Nodo\+AVL}}$<$ T $>$ $\ast$ \mbox{\hyperlink{class_arbol_a_v_l}{Arbol\+AVL}}$<$ T $>$\+::buscar (\begin{DoxyParamCaption}\item[{T}]{valor }\end{DoxyParamCaption})}
+
+Elimina un valor del árbol. 
+\begin{DoxyParams}{Parameters}
+{\em actual} & Nodo actual. \\
+\hline
+{\em valor} & Valor a eliminar. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{arbol__avl_8h_source_l00218}{218}} of file \mbox{\hyperlink{arbol__avl_8h_source}{arbol\+\_\+avl.\+h}}.
+
+\mbox{\Hypertarget{class_arbol_a_v_l_ad79026fec6da1103b4fe598efd0d53f4}\label{class_arbol_a_v_l_ad79026fec6da1103b4fe598efd0d53f4}} 
+\index{ArbolAVL$<$ T $>$@{ArbolAVL$<$ T $>$}!eliminar@{eliminar}}
+\index{eliminar@{eliminar}!ArbolAVL$<$ T $>$@{ArbolAVL$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{eliminar()}{eliminar()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_arbol_a_v_l}{Arbol\+AVL}}$<$ T $>$\+::eliminar (\begin{DoxyParamCaption}\item[{T}]{valor }\end{DoxyParamCaption})}
+
+Inserta un nodo en el árbol. 
+\begin{DoxyParams}{Parameters}
+{\em actual} & Nodo actual. \\
+\hline
+{\em nodo} & Nodo a insertar. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{arbol__avl_8h_source_l00206}{206}} of file \mbox{\hyperlink{arbol__avl_8h_source}{arbol\+\_\+avl.\+h}}.
+
+\mbox{\Hypertarget{class_arbol_a_v_l_ad7d20aefeee1eedfe5308fe0c743410a}\label{class_arbol_a_v_l_ad7d20aefeee1eedfe5308fe0c743410a}} 
+\index{ArbolAVL$<$ T $>$@{ArbolAVL$<$ T $>$}!insertar@{insertar}}
+\index{insertar@{insertar}!ArbolAVL$<$ T $>$@{ArbolAVL$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insertar()}{insertar()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_arbol_a_v_l}{Arbol\+AVL}}$<$ T $>$\+::insertar (\begin{DoxyParamCaption}\item[{T}]{valor }\end{DoxyParamCaption})}
+
+Inserta un valor en el árbol. 
+\begin{DoxyParams}{Parameters}
+{\em valor} & Valor a insertar. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{arbol__avl_8h_source_l00187}{187}} of file \mbox{\hyperlink{arbol__avl_8h_source}{arbol\+\_\+avl.\+h}}.
+
+\mbox{\Hypertarget{class_arbol_a_v_l_a1b67b1e9218eea9471e45419911ca044}\label{class_arbol_a_v_l_a1b67b1e9218eea9471e45419911ca044}} 
+\index{ArbolAVL$<$ T $>$@{ArbolAVL$<$ T $>$}!obtener\_raiz@{obtener\_raiz}}
+\index{obtener\_raiz@{obtener\_raiz}!ArbolAVL$<$ T $>$@{ArbolAVL$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{obtener\_raiz()}{obtener\_raiz()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_nodo_a_v_l}{Nodo\+AVL}}$<$ T $>$ $\ast$ \mbox{\hyperlink{class_arbol_a_v_l}{Arbol\+AVL}}$<$ T $>$\+::obtener\+\_\+raiz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{arbol__avl_8h_source_l00147}{147}} of file \mbox{\hyperlink{arbol__avl_8h_source}{arbol\+\_\+avl.\+h}}.
+
+\mbox{\Hypertarget{class_arbol_a_v_l_a4b1898f3668ea96d49ee560385f84844}\label{class_arbol_a_v_l_a4b1898f3668ea96d49ee560385f84844}} 
+\index{ArbolAVL$<$ T $>$@{ArbolAVL$<$ T $>$}!recorrer@{recorrer}}
+\index{recorrer@{recorrer}!ArbolAVL$<$ T $>$@{ArbolAVL$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{recorrer()}{recorrer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_arbol_a_v_l}{Arbol\+AVL}}$<$ T $>$\+::recorrer (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(\mbox{\hyperlink{class_nodo_a_v_l}{Nodo\+AVL}}$<$ T $>$ $\ast$)$>$}]{funcion,  }\item[{\mbox{\hyperlink{arbol__avl_8h_a180d807d2d0592759332560991a26088}{Tipo\+Recorrido}}}]{tipo\+\_\+recorrido = {\ttfamily TipoRecorrido\+:\+:INORDEN} }\end{DoxyParamCaption})}
+
+Recorre el árbol en preorden. 
+\begin{DoxyParams}{Parameters}
+{\em nodo} & Nodo actual. \\
+\hline
+{\em funcion} & Función a ejecutar. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{arbol__avl_8h_source_l00253}{253}} of file \mbox{\hyperlink{arbol__avl_8h_source}{arbol\+\_\+avl.\+h}}.
+
+\mbox{\Hypertarget{class_arbol_a_v_l_a427610f4ac3bb88f8c14895048997e5f}\label{class_arbol_a_v_l_a427610f4ac3bb88f8c14895048997e5f}} 
+\index{ArbolAVL$<$ T $>$@{ArbolAVL$<$ T $>$}!recorrer@{recorrer}}
+\index{recorrer@{recorrer}!ArbolAVL$<$ T $>$@{ArbolAVL$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{recorrer()}{recorrer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{class_arbol_a_v_l}{Arbol\+AVL}}$<$ T $>$\+::recorrer (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(T)$>$}]{funcion,  }\item[{\mbox{\hyperlink{arbol__avl_8h_a180d807d2d0592759332560991a26088}{Tipo\+Recorrido}}}]{tipo\+\_\+recorrido = {\ttfamily TipoRecorrido\+:\+:INORDEN} }\end{DoxyParamCaption})}
+
+Busca un valor en el árbol. 
+\begin{DoxyParams}{Parameters}
+{\em actual} & Nodo actual. \\
+\hline
+{\em valor} & Valor a buscar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nodo encontrado. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{arbol__avl_8h_source_l00235}{235}} of file \mbox{\hyperlink{arbol__avl_8h_source}{arbol\+\_\+avl.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Matthew 2022-\/2023/\+Estructuras/\+Proyecto\+Segundo\+Parcial/\+AVLTree\+App.\+src/\+AVLTree\+App/\mbox{\hyperlink{arbol__avl_8h}{arbol\+\_\+avl.\+h}}\end{DoxyCompactItemize}
